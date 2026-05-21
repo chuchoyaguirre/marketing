@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomía Web</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        /* HEADER */
+        header{
+            background:#1e3a5f;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        /* NAVBAR */
+        nav{
+            background:#16324f;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin:15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#ffd166;
+        }
+
+        /* HERO SECTION */
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://picsum.photos/1200/400');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h2{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:18px;
+        }
+
+        /* CONTENIDO */
+        .contenedor{
+            display:flex;
+            margin:20px;
+            gap:20px;
+        }
+
+        /* SIDEBAR */
+        aside{
+            width:25%;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* MAIN CONTENT */
+        main{
+            width:75%;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        main h2{
+            margin-bottom:15px;
+            color:#1e3a5f;
+        }
+
+        main p{
+            line-height:1.7;
+            margin-bottom:15px;
+        }
+
+        /* FOOTER */
+        footer{
+            background:#1e3a5f;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            .contenedor{
+                flex-direction:column;
+            }
+
+            aside,
+            main{
+                width:100%;
+            }
+
+            nav ul{
+                flex-direction:column;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>PICADA DE CHUCHO</h1>
+        <p>LAS MEJORES PICADAS DE TODO ANTOQUIA</p>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>BIENVENIDOS A PICADA DE CHUCHO</h2>
+        <p>Conoce mas sobre nuestro producto</p>
+    </section>
+
+    <!-- -->
+    <div class="contenedor">
+
+        <!-- SIDEBAR -->
+        <aside>
+            <h3>NUESTROS PRODUCTOS</h3>
+            <p>
+                En este apartado podras encontrar todos nuestros productos.
+            </p>
+
+            <ul>
+                <li>picadas de fruta </li>
+                <li>jugos naturales</li>
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            </li>
+                <li></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN -->
+        <main>
+            <h2>TE OFRECEMOS </h2>
+
+            <p>
+                Una amplia variedad de picadas en pura fruta, y hidrtacion como jugos naturales agua y mucho mas, esto te brindara una gran nutricion y hidrtacion a la hora de hacer cualquier tipo de actividad fisica.
+            </p>
+
+            <p>
+                Tenemos dos puntos de venta, uno en la ciclo ruta de medellin y otro en el salado (Envigado).
+    
+            </p>
+
+            <p>
+                por aca puedes encontrar nuestra carta, y tambien puedes agendar tus pedidos al carrito.
+            </p>
+        </main>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Anatomía Web | Diseñado con HTML y CSS
+        </p>
+    </footer>
+
+</body>
+</html>
